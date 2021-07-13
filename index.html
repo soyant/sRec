@@ -4,33 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta equiv=X-UA-compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-		#footer {
-		    position: fixed;
-		    padding: 10px 10px 0px 10px;
-		    bottom: 0;
-		    width: 100%;
-		    /* Height of the footer*/ 
-		    height: 40px;
-		    background: grey;
-		}
-    	</style>									     	
-									     
-									     
-	<title>음성인식 연습</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">     	
+									     						     
+	<title>음성인식 연습   YN LEE</title>
 </head>
 
 <body>
 	<button id="start"> 시작 </button>
 	<button id="stop"> 끝 </button>
 </body>
-<footer>
-	YUNA		 
-</footer>			 
 
-<script>  
+			 <script>  
 	if(!("webkitSpeechRecognition" in window)) {
 		alert("크롬만 지원됨");
 	} else {
@@ -44,8 +28,7 @@
 			speech.stop();
 		})
 		speech.addEventListener("result", (event)  => {
-			const {transcript}=event["results"][0][0];
-			alert(transcript);  
+			const {transcript}=event["results"][0][0]; 
 			console.log(transcript);
 		})
 	}
