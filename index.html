@@ -28,8 +28,8 @@
 		})
 		speech.addEventListener("result", (event)  => {
 			const {transcript}=event["results"][0][0];
+			alert(transcript);  
 			console.log(transcript);
-			alert(transcript);
 		})
 	}
 </script>
