@@ -19,6 +19,8 @@
 		alert("크롬만 지원됨");
 	} else {
 		const speech= new webkitSpeechRecognition;
+	        
+	        recognition.lang="kor";
 
 		document.getElementById("start").addEventListener("click", () => {
 			speech.start();
