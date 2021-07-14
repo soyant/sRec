@@ -20,7 +20,7 @@
 	} else {
 		const speech= new webkitSpeechRecognition;
 	        
-	        recognition.lang="kor";
+	        speech.lang="kor";
 
 		document.getElementById("start").addEventListener("click", () => {
 			speech.start();
